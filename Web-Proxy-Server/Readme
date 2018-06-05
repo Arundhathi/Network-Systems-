@@ -1,0 +1,32 @@
+#/****************************
+# * File: Proxy Webserver
+# * Subject: Network Systems 
+# * Author: Arundhathi Swami 
+# * Date: December 13 2017 
+# * *************************/ 
+
+
+FOLDER STRUCTURE
+-Folder - cachedir
+-proxyserver.c
+-blacklist
+
+To create executable
+Commands: make 
+ 
+To RUN: ./proxy localhost <timeout>
+
+LIST OF COMMANDS SUPPORTED AND FORMAT: 
+1. GET http://www.google.com HTTP/1.1 
+
+THROWS ERRORS FOR: 
+1. method other than get 
+2. wrong http version 
+3. black list access 
+
+
+FEATURES: 
+1. File caching and IP caching 
+2. Black listed websites have forbidden access 
+3. Attempted link prefetching 
+4. Error Handling
